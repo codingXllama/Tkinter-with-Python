@@ -4,11 +4,11 @@ import random
 #  +++++ FUNCTION BODY +++++
 
 def PhraseGenerator():
-    phraseList= ["Hello ","What's up ","Aloha ","Marhaba ","Salam "]
+    phraseList= ["Hello ","What's up ","Aloha ","Marhaba ","Salam ","halo "]
     # Getting the content/text inside the entryField1
     userName=str(entryFiled1.get())
     # returning a random phrase with the userName
-    return phraseList[random.randint(0,4)] + userName 
+    return phraseList[random.randint(0,len(phraseList)-1)] + userName 
     
 
 
